@@ -8,8 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 import pages.BasePage;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", glue = "steps", plugin = { "pretty",
-        "html:target/cucumber-reports" }, monochrome = true, tags = "@Test")
+@CucumberOptions(features = "src/test/resources/features", glue = "steps", monochrome = true, tags = "@Test")
 
 public class runner {
     // @AfterClass
